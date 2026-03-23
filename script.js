@@ -16,9 +16,9 @@ var app = new Vue({
         dptab2: ['zdradziecko', 'lewacko', 'sprzedajnie', 'parszywie'],
         dptab3: ['zachwala', 'ubóstwia'],
         dptab4: ['upadły zachód', 'zgniły zachód', 'unijne instytucje', 'złotego cielca'],
-        rtab0: ['wy się czepiacie Putina', 'wy się czepiacie Rosji', 'macie pretensje do Putina','macie pretensje do Rosji','oskarżacie Rosję','wysyłacie broń do Ukrainy'],
-        rtab1: ['a gdzie byliście jak', 'a nie obchodzi was że','a zapomnieliście że'],
-        rtab2: ['Ameryka bezkarnie napadła na Wenezuelę', 'bombardowali Gaze', 'Ameryka miała wojnę w Wietnamie i Korei', 'bombili Donbas', 'w Iraku nie było broni masowego rażenia','Unia zakazała wydobywać polski węgiel','a u was bezdomni zamarzają na ulicach'],
+        rtab0: ['Przedłużacie konflikt w Ukrainie przez dostawy broni','wy się czepiacie Putina', 'wy się czepiacie Rosji', 'macie pretensje do Putina','macie pretensje do Rosji','oskarżacie Rosję','wysyłacie broń do Ukrainy'],
+        rtab1: ['a gdzie byliście jak', 'a nie obchodzi was że','a zapomnieliście że','a'],
+        rtab2: ['Ameryka bezkarnie napadła na Wenezuelę', 'bombardowali Gaze', 'Ameryka miała wojnę w Wietnamie i Korei', 'bombili Donbas', 'w Iraku nie było broni masowego rażenia','Unia zakazała wydobywać polski węgiel','u was bezdomni zamarzają na ulicach','bogacą się amerykańskie koncerny zbrojeniowe','zachód upada przez swoją głupotę','szykanowany sędzie uciekł na Białoruś'],
         all: '',
         all2: '',
         errors: []
