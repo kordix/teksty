@@ -16,7 +16,7 @@ var app = new Vue({
         dptab2: ['zdradziecko', 'lewacko', 'sprzedajnie', 'parszywie'],
         dptab3: ['zachwala', 'ubóstwia'],
         dptab4: ['upadły zachód', 'zgniły zachód', 'unijne instytucje', 'złotego cielca'],
-        rtab0: ['wy się czepiacie Putina', 'wy się czepiacie Rosji', 'macie pretensje do Putina', 'oskarżacie Rosję','wysyłacie broń do Ukrainy'],
+        rtab0: ['wy się czepiacie Putina', 'wy się czepiacie Rosji', 'macie pretensje do Putina','macie pretensje do Rosji','oskarżacie Rosję','wysyłacie broń do Ukrainy'],
         rtab1: ['a gdzie byliście jak', 'a nie obchodzi was że','a zapomnieliście że'],
         rtab2: ['Ameryka bezkarnie napadła na Wenezuelę', 'bombardowali Gaze', 'Ameryka miała wojnę w Wietnamie i Korei', 'bombili Donbas', 'w Iraku nie było broni masowego rażenia','Unia zakazała wydobywać polski węgiel','a u was bezdomni zamarzają na ulicach'],
         all: '',
@@ -34,7 +34,7 @@ var app = new Vue({
                     else { this.all = this.gen(this.ktab0) + ' ' + this.gen(this.ktab1) + ' ' + this.gen(this.kptab2) + ' ' + this.gen(this.kptab3) }
                 }
 
-                if (this.tryb == 'KO') {
+                if (this.tryb == 'PO') {
                     if (num == 1) { this.all = this.gen(this.dtab0) + ' ' + this.gen(this.dtab1) + ' ' + this.gen(this.dptab2) + ' ' + this.gen(this.dtab2) + ' ' + this.gen(this.dtab3); }
                     else { this.all = this.gen(this.dtab0) + ' ' + this.gen(this.dtab1) + ' ' + this.gen(this.dptab2) + ' ' + this.gen(this.dptab3) + ' ' + this.gen(this.dptab4) }
                 }
