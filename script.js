@@ -19,6 +19,8 @@ var app = new Vue({
         rtab0: ['twierdzicie że w Rosji nie ma wolności','bierzecie kredyty na zbrojenia','Twierdzicie że Rosja narusza prawa człowieka','Przedłużacie konflikt w Ukrainie przez dostawy broni','wy się czepiacie Putina', 'wy się czepiacie Rosji', 'macie pretensje do Putina','macie pretensje do Rosji','oskarżacie Rosję','wysyłacie broń do Ukrainy'],
         rtab1: ['a gdzie byliście jak', 'a nie obchodzi was że','a zapomnieliście że','a'],
         rtab2: ['Ameryka bezkarnie napadła na Wenezuelę', 'bombardowali Gaze', 'Ameryka miała wojnę w Wietnamie i Korei', 'bombili Donbas', 'w Iraku nie było broni masowego rażenia','Unia zakazała wydobywać polski węgiel','u was bezdomni zamarzają na ulicach','bogacą się amerykańskie koncerny zbrojeniowe','zachód upada przez swoją głupotę','szykanowany sędzia uciekł na Białoruś','Niemcy nie zapłaciły reparacji','Tusk służy interesom Berlina','u was ogranicza się wolność przez fotoradary'],
+        rtab3: ['Ukraińcy niepotrzebnie walczą za', 'Ukraińcy niepotrzebnie przelewają krew za', 'Ukraińcy dają się wykorzystać przez', 'Ukraińcy dają się wrobić w', 'Ukraińcy są manipulowani przez'],
+        rtab4:['interesy zachodu','obce agentury','zachodnie służby','zgniły podły zachód','surowce','zachodnie korporacje'],
         all: '',
         all2: '',
         errors: []
@@ -40,7 +42,11 @@ var app = new Vue({
                 }
 
                 if (this.tryb == 'RU') {
-                    this.all = this.gen(this.rtab0) + ' ' + this.gen(this.rtab1) + ' ' + this.gen(this.rtab2) + ' '
+                    if (num == 1) {
+                        this.all = this.gen(this.rtab3) + ' ' + this.gen(this.rtab4)
+                    } else{
+                        this.all = this.gen(this.rtab0) + ' ' + this.gen(this.rtab1) + ' ' + this.gen(this.rtab2) + ' '
+                    }
                 }
             }
         },
